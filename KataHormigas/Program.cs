@@ -50,8 +50,18 @@ namespace KataHormigas
                 }
             }
 
-            Console.WriteLine($"{a - ant} + {n - ant} + {t - ant}");
-
+            if (a > n && a > t)
+            {
+                Console.WriteLine($"Hay: {a-ant} hormigas muertas");
+            }
+            else if (n > a && n > t)
+            {
+                Console.WriteLine($"Hay: {n - ant} hormigas muertas");
+            }
+            else if (t > a && t > n)
+            {
+                Console.WriteLine($"Hay: {t - ant} hormigas muertas");
+            }
 
         }
     }
